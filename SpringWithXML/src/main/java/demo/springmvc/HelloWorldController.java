@@ -13,5 +13,10 @@ public class HelloWorldController {
        model.addAttribute("greeting", "Hello Spring MVC");         
        return"helloworld";         
    }
+   @RequestMapping("/")
+   public String HelloWorld(Model model) {         
+       model.addAttribute("greeting", "Hello World Spring MVC");         
+       return"helloworld";         
+   }
 
 }
